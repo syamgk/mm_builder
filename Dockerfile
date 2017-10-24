@@ -40,12 +40,12 @@ echo "8933bad161af4178b1185d1a37fbf41ea5269c55" > $ANDROID_HOME/licenses/android
 echo "84831b9409646a918e30573bab4c9c91346d8abd" > $ANDROID_HOME/licenses/android-sdk-preview-license
 
 RUN cd /opt/ &&\
-wget https://github.com/mattermost/mattermost-mobile/archive/v1.2.0.tar.gz &&\
-tar xvf v1.2.0.tar.gz 
+wget https://github.com/mattermost/mattermost-mobile/archive/v1.3.0.tar.gz &&\
+tar xvf v1.3.0.tar.gz 
 
-ADD package.json /opt/mattermost-mobile-1.2.0/
+ADD package.json /opt/mattermost-mobile-1.3.0/
 
-RUN cd /opt/mattermost-mobile-1.2.0 && \
+RUN cd /opt/mattermost-mobile-1.3.0 && \
 npm install &&\
-rm /opt/mattermost-mobile-1.2.0/node_modules/intl/.babelrc
+rm /opt/mattermost-mobile-1.3.0/node_modules/intl/.babelrc
 
