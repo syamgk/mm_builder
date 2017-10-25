@@ -31,6 +31,7 @@ echo y | sdkmanager "build-tools;23.0.2" && \
 echo y | sdkmanager "build-tools;23.0.1" && \
 echo y | sdkmanager "build-tools;25.0.2" && \
 echo y | sdkmanager "build-tools;25.0.0" && \
+echo y | sdkmanager "build-tools;25.0.1" && \
 echo y | sdkmanager "build-tools;24.0.0" && \
 echo y | sdkmanager "extras;android;m2repository" && \
 echo y | sdkmanager "extras;google;m2repository" && \
@@ -43,9 +44,6 @@ RUN cd /opt/ &&\
 wget https://github.com/mattermost/mattermost-mobile/archive/v1.3.0.tar.gz &&\
 tar xvf v1.3.0.tar.gz 
 
-ADD package.json /opt/mattermost-mobile-1.3.0/
-
 RUN cd /opt/mattermost-mobile-1.3.0 && \
-npm install &&\
-rm /opt/mattermost-mobile-1.3.0/node_modules/intl/.babelrc
+npm install 
 
