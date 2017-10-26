@@ -25,7 +25,7 @@ add the variables to gradle.properties
 vi /opt/mattermost-mobile-1.3.0/android/gradle.properties
 ```
 
-add the below lines to the bottom of the file
+add the below lines to the bottom of the file; do change the variables according the key generated above
 ```
 MATTERMOST_RELEASE_STORE_FILE=../keystores/my-release-key.keystore
 MATTERMOST_RELEASE_PASSWORD=password
