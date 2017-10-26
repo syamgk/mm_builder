@@ -15,7 +15,7 @@ run the container using the below command
 $docker run -it <image name> bash
 ```
 
-then create a key using keytool 
+then create a key using keytool and place it at /opt/mattermost-mobile-1.3.0/android/keystores/my-release-key.keystore
 ```
 keytool -genkey -v -keystore my-release-key.keystore -alias alias_name -keyalg RSA -keysize 2048 -validity 10000
 ```
