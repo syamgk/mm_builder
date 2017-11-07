@@ -32,6 +32,7 @@ echo y | sdkmanager "add-ons;addon-google_apis-google-21" && \
 echo y | sdkmanager "platforms;android-25" && \
 echo y | sdkmanager "platforms;android-23" && \
 echo y | sdkmanager "build-tools;26.0.1" &&\
+echo y | sdkmanager "build-tools;26.0.0" &&\
 echo y | sdkmanager "build-tools;25.0.2" && \
 echo y | sdkmanager "build-tools;25.0.1" && \
 echo y | sdkmanager "build-tools;25.0.0" && \
@@ -46,10 +47,10 @@ echo "84831b9409646a918e30573bab4c9c91346d8abd" > $ANDROID_HOME/licenses/android
 
 
 RUN cd /opt/ &&\
-wget https://github.com/mattermost/mattermost-mobile/archive/v1.3.0.tar.gz &&\
-tar xvf v1.3.0.tar.gz && \
+wget https://github.com/mattermost/mattermost-mobile/archive/v1.4.0.tar.gz &&\
+tar xvf v1.4.0.tar.gz && \
 
-RUN cd /opt/mattermost-mobile-1.3.0 && \
+RUN cd /opt/mattermost-mobile-1.4.0 && \
 yarn install && \
 make
 
