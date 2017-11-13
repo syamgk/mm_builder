@@ -34,13 +34,13 @@ MATTERMOST_MARELEASE_KEY_PASSWORD=password
 
 ```
 
-also you can add DefaultServerUrl in file `/opt/mattermost-mobile-1.3.0/dist/assets/config.json`
+also you can add DefaultServerUrl in file `/opt/mattermost-mobile/dist/assets/config.json`
 
 ##### if you are using your own [push-proxy-server](https://github.com/mattermost/mattermost-push-proxy) setup  
 
 replace the google-services.json file in mattermost-mobile/android/app/google-services.json with the one generated from Firebase console.
 
-replace the value of `com.wix.reactnativenotifications.gcmSenderId` with the `Sender ID:` generated from console.firebase.google.com
+replace the value of `com.wix.reactnativenotifications.gcmSenderId` with the `Sender ID:` generated from console.firebase.google.com on file `mattermost-mobile/android/app/src/main/AndroidManifest.xml`
 
 eg :
 ```
